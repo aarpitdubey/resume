@@ -65,3 +65,11 @@ After clicking the combine button the Power Query performed 4 different function
 - Imported CSV
 - Promoted Headers
 - Changed Type
+
+5. Now, we have some useful features and some are not here, I found out `ride_id` feature as an un-useful feature right now, let's remove it.
+
+   ```python
+   f(x) = Table.RemoveColumns(#"Changed Type",{"ride_id"})
+   ```
+
+![img](./output/img13.png)
