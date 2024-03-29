@@ -31,15 +31,14 @@ As this dataset is more than 1GB so I'm going to upload it to : [Cyclistic Bike 
 2. We have 12 files and for all of them counted as rows and we have 8 columns created by the Power Query Editor
    ![img](./output/img7.png)
 3. Here, we can see `Extention` feature so, to maintain the same or equal to a specific choice of extention containing files we can perform certain task to do that so. For that you have to click the down arrow as shown in extension feature
-   <<<<<<< HEAD
-   <<<<<<< HEAD
+
    ![img](./output/img8.png)
 
 ```python
 f(x) = Table.SelectRows(Source, each [Extension] = ".csv")
 ```
 
-    ![img](./output/img9.png)
+![img](./output/img9.png)
 
 ```python
 f(x) = Table.SelectColumns(#"Filtered Rows",{"Content"})
