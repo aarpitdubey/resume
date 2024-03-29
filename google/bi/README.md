@@ -73,3 +73,16 @@ After clicking the combine button the Power Query performed 4 different function
    ```
 
 ![img](./output/img13.png)
+
+6. Now, we can see here in our dataset there are two features `started_at` and `ended_at` but these two features having values as combination of data and time which we have to separate into `start_date`, `start_time`, `end_date` and `end_time` so, further we can derived new features from them such as `duration_of_ride` of something like that.
+
+![img](./output/img14.png)
+
+```python
+f(x) = Table.DuplicateColumn(#"Duplicated Column1", "started_at", "started_at - Copy")
+f(x) = Table.DuplicateColumn(#"Duplicated Column2", "started_at", "started_at - Copy.1")
+f(x) = Table.DuplicateColumn(#"Duplicated Column1", "ended_at", "ended_at - Copy")
+f(x) = Table.DuplicateColumn(#"Duplicated Column2", "ended_at", "ended_at - Copy.1")
+```
+
+![img]()
