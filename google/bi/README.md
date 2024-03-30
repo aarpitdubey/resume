@@ -5,8 +5,11 @@
 **Tools Used :**
 
 - **Tableau :** Familarity with Tableau UI.
-- **Excel :** Familarity with Excel. USE Power Query before.
-- **Domain :** Having fundamental grasp of sales domain.
+- **Excel :** Familarity with Excel. USE Pivot Table and Power Query before.
+
+  Google Business Intelligence License (69f62442ac83acf9883d) and Certification: [click here](https://coursera.org/share/69f62442ac83acf9883df43f8725e200)
+
+  ![img](.\output\Google_Business_Intelligent_License_Certificate.jpg)
 
 Dataset used:
 
