@@ -9,9 +9,11 @@
 
   Google Business Intelligence License (69f62442ac83acf9883d) and
 
-  Certification:  [click here](https://coursera.org/share/69f62442ac83acf9883df43f8725e200)
+  Certification:  [click here
 
-  ![img](.\output\Google_Business_Intelligent_License_Certificate.png)
+  ](https://coursera.org/share/69f62442ac83acf9883df43f8725e200)
+
+  ![img](.\output\googleBIcertification.png)
 
 Dataset used:
 
