@@ -5,6 +5,7 @@
 **Tools Used :**
 
 * **Excel :** Familarity with Excel. USE Pivot Table and Power Query before.
+* **SQL :** Analysing Data and Dataset Using SQL queries.
 * **Tableau :** Familarity with Tableau UI.
 
 Google Business Intelligence License (69f62442ac83acf9883d) and Certification:
