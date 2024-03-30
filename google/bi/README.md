@@ -85,4 +85,18 @@ f(x) = Table.DuplicateColumn(#"Duplicated Column1", "ended_at", "ended_at - Copy
 f(x) = Table.DuplicateColumn(#"Duplicated Column2", "ended_at", "ended_at - Copy.1")
 ```
 
-![img]()
+![img](./output/img15.png)
+
+7. Now, let's change the name of these columns and change their types
+
+   ```python
+   f(x) = Table.RenameColumns(#"Duplicated Column3",{{"started_at - Copy", "start_date"}})
+   ```
+
+![img](./output/img16.png)
+
+```python
+f(x) = Table.TransformColumnTypes(#"Renamed Columns",{{"start_date", type date}})
+```
+
+![img](./output/img17.png)
