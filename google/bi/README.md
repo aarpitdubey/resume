@@ -100,3 +100,35 @@ f(x) = Table.TransformColumnTypes(#"Renamed Columns",{{"start_date", type date}}
 ```
 
 ![img](./output/img17.png)
+
+8. Change the name of another duplicated column to `start_hour` and then extract the hour values from it.
+
+```python
+f(x) = Table.RenameColumns(#"Extracted Time",{{"started_at - Copy.1", "start_hour"}})
+```
+
+then, extracting the hour values 
+
+```python
+f(x) = Table.TransformColumns(#"Changed Type1",{{"start_hour", Time.Hour, Int64.Type}})
+```
+
+![img](./output/img18.png)
+
+9. Same the above operations we can perform for `end_date` and `end_hour` columns to generate, let's do it
+
+![img](./output/img19.png)
+
+10. Now, let's add a custom column and named it as `trip_duration_minutes` and it's basically, the difference between the `end_hour` and `start_hour` in minutes.
+
+```python
+f(x) = Table.AddColumn(#"Extracted Time1", "trip_duration_minutes", each [ended_at] - [started_at])
+```
+
+![img](./output/img20.png)
+
+```python
+f(x) = Table.TransformColumns(#"Added Custom",{{"trip_duration_minutes", Duration.Minutes, Int64.Type}})
+```
+
+![img]()
