@@ -4,14 +4,14 @@
 
 **Tools Used :**
 
-- **Tableau :** Familarity with Tableau UI.
-- **Excel :** Familarity with Excel. USE Pivot Table and Power Query before.
+* **Excel :** Familarity with Excel. USE Pivot Table and Power Query before.
+* **Tableau :** Familarity with Tableau UI.
 
-  Google Business Intelligence License (69f62442ac83acf9883d) and Certification:
+Google Business Intelligence License (69f62442ac83acf9883d) and Certification:
 
-  [Click Here](https://coursera.org/share/69f62442ac83acf9883df43f8725e200  "/")
+[Click Here](https://coursera.org/share/69f62442ac83acf9883df43f8725e200 "/")
 
-  ![img](./output/googleBIcertification.png "Google Business Intelligence Certification and Licensing")
+![img](./output/googleBIcertification.png "Google Business Intelligence Certification and Licensing")
 
 Dataset used:
 
