@@ -131,4 +131,6 @@ f(x) = Table.AddColumn(#"Extracted Time1", "trip_duration_minutes", each [ended_
 f(x) = Table.TransformColumns(#"Added Custom",{{"trip_duration_minutes", Duration.Minutes, Int64.Type}})
 ```
 
-![img]()
+
+
+![img](./output/img21.png)
