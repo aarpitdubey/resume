@@ -2,4 +2,5 @@
 
 Google Business Intelligence Certification
 
-![img]()
+
+![img](./output/GoogleBI.gif)
