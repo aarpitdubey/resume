@@ -9,7 +9,7 @@
 
   Google Business Intelligence License (69f62442ac83acf9883d) and
 
-  Certification:  [click here
+  Certification:    [click here
 
   ](https://coursera.org/share/69f62442ac83acf9883df43f8725e200)
 
