@@ -107,7 +107,7 @@ f(x) = Table.TransformColumnTypes(#"Renamed Columns",{{"start_date", type date}}
 f(x) = Table.RenameColumns(#"Extracted Time",{{"started_at - Copy.1", "start_hour"}})
 ```
 
-then, extracting the hour values 
+then, extracting the hour values
 
 ```python
 f(x) = Table.TransformColumns(#"Changed Type1",{{"start_hour", Time.Hour, Int64.Type}})
@@ -131,6 +131,66 @@ f(x) = Table.AddColumn(#"Extracted Time1", "trip_duration_minutes", each [ended_
 f(x) = Table.TransformColumns(#"Added Custom",{{"trip_duration_minutes", Duration.Minutes, Int64.Type}})
 ```
 
+![img](./output/img21.png "transformed added column")
 
+#### Q. Find out the number of counts of missing start station names in this cyclistic bike data?
 
-![img](./output/img21.png)
+Firstly, we have to find the feature named as `start_station_name` or similar then we have to filter the column using the down arrow button at the column name.
+
+![img](./output/img23.png)
+
+Now, after clicking the `Transform` tab and `count rows` we have **807778** rows which are blank/null/missing rows in this specific feature.
+
+![img](./output/img24.png)
+
+Similarly we can check other columns for enhancing analysis perspective. Done!
+
+#### Q. Find out the rows which are having negative values in `trip_duration_minutes` column?
+
+let's us see is there are any values which are 0 or less than in `trip_duration_minutes` column
+
+![img](./output/img25.png)
+
+Firtly we have to filter the column using the same down arrow button then we have to select `Number filters` and then, click on `Less Than ...`
+
+![img](./output/img26.png)
+
+Then you have to put the value here we are going to find the negative value so we put less than 0.
+
+![img](./output/img27.png)
+
+These are the rows which are containing negative values in `trip_durations_minutes`
+
+![img](./output/img28.png)
+
+We have filter out the blank values and remove those values let's create a Pivot Table and draw out some Visualization and analyse that chart to make some conclusions.
+
+#### **Q. Create a Visualisation :** We have to find out the time in a day where  the maximum rides are going to happened.
+
+let's load our transformed data into excel sheet and then create a pivot table.
+
+We load our transformed data 
+
+![img](./output/img29.png)
+
+Now we are going to create the pivot table and our visualisation.
+
+ let's create it
+
+![img](./output/visualisation.gif)
+
+So as we can se I just create a pivot table and then drag the `start_hour` column into the ROWS field and then drag the same `start_hour` column into the VALUES field.
+
+Now, We got some result but we have to find out the number of ride so we right click on the sum of start_hour and summarize the values as count.
+
+we got the count of start_hour and then we further go with the intert tab and click on the Recomended chart. It provide the count chart which is helpful to create the accurate visualisation plot yes, we get this below bar chart.
+
+![img](./output/img30.png)
+
+### Conclustion :
+
+1. Around 4'O clock to 5'O clock the rides are maximum
+2. Maximum rides are going to happened in 5 pm in evening time.
+3. Traffic would maximum around 5 pm and minimum at 4 Am.
+4. Around 2 Am to 4 Am the traffic or rides are minimum.
+5. Minimum rides are going to happened in 4 Am in morning time
