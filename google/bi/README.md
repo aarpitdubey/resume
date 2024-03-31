@@ -175,7 +175,7 @@ We have filter out the blank values and remove those values let's create a Pivot
 
 let's load our transformed data into excel sheet and then create a pivot table.
 
-We load our transformed data 
+We load our transformed data
 
 ![img](./output/img29.png)
 
@@ -197,6 +197,6 @@ we got the count of start_hour and then we further go with the intert tab and cl
 
 1. Around 4'O clock to 5'O clock the rides are maximum
 2. Maximum rides are going to happened in 5 pm in evening time.
-3. Traffic would maximum around 5 pm and minimum at 4 Am.
-4. Around 2 Am to 4 Am the traffic or rides are minimum.
+3. Profit would maximum around 5 pm and minimum at 4 Am.
+4. Around 2 Am to 4 Am the profit or rides are minimum.
 5. Minimum rides are going to happened in 4 Am in morning time
