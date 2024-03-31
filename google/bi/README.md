@@ -351,7 +351,7 @@ WHERE member_casual IS NOT NULL
 GROUP BY member_casual;
 ```
 
-    ![img](./output/img37.png)
+ ![img](./output/img37.png)
 
 **Q2. Proportion of Rides by Bike Type?**
 
