@@ -193,10 +193,47 @@ we got the count of start_hour and then we further go with the intert tab and cl
 
 ![img](./output/img30.png)
 
-### Conclustion :
+Then I want to see which type of customers uses the bikes either they are members (subscribers) or they are causal customers and in what season they prefer our bike cycles the most.
+
+I choose line chart to represent the time-variation and the rides according to time.
+
+Here, in below chart I filtered `member_casual` to casual and `rideable_type` to classic_bike
+
+![img](./output/img31.png)
+
+Here, in below chart I filtered `member_casual` to casual and `rideable_type` to docked_bike
+
+![img](./output/img32.png)
+
+Here, in below chart I filtered `member_casual` to casual and `rideable_type` to electric_bike
+
+![img](./output/img33.png)
+
+Here, in below chart I filtered `member_casual` to member and `rideable_type` to classic_bike
+
+![img](./output/img34.png)
+
+Here, in below chart I filtered `member_casual` to member and `rideable_type` to docked_bike
+
+![img](./output/img35.png)
+
+Here, in below chart I filtered `member_casual` to member and `rideable_type` to electric_bike
+
+![img](./output/img36.png)
+
+### Observations:
 
 1. Around 4'O clock to 5'O clock the rides are maximum
 2. Maximum rides are going to happened in 5 pm in evening time.
 3. Profit would maximum around 5 pm and minimum at 4 Am.
 4. Around 2 Am to 4 Am the profit or rides are minimum.
-5. Minimum rides are going to happened in 4 Am in morning time
+5. Minimum rides are going to happened in 4 Am in morning time.
+6. Electric bikes are more preferable by casual members
+7. Classic bikes are more preferable for members
+8. Peak bike usage are mostly, after work timing.
+9. Docked bikes aren't preference by the annual members or subscribers
+10. Summer casual member dominance and Winter revenue are from annual members.
+
+## Conclusion:
+
+Summer times casual members preferably use electric bikes than members and In winter times most revenue generates from annual members. Peak usages of bikes are after 8 Am to 4 pm work timings or from 5 pm to 7pm. Electric bikes preference by casual members and Classic bikes preference by annual members.  Docked bikes are not prefer by the annual members.
