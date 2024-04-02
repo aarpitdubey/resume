@@ -531,3 +531,19 @@ These are the files we have :
 Now, In Tableau we have to merge these all files so we have to UNION them just like the below steps shown:
 
 ![img](./output/tableau_union_of_multiple_csv_files.gif)
+
+Now, we have merged data of all the 12 .csv files so we can perform certaing operations, Analysis and Visualizations
+
+Let's create a "Measure" or measurable feature using the two given columns or dimensions 
+
+**Step 1: Creating a field 'TripDuration' using 'ended_at' and 'started_at' columns**
+
+formula Used:` [ended_at] - [started_at]`
+
+Select the drop down and from that select `Create Calculated field`
+
+![img](./output/img47.png)
+
+then after clicking to `create calculated field` a pop up box wilol come where you can fill the field name and your formula to decide the nature of that field below shown.
+
+![img](./output/img46.png)
