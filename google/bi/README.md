@@ -570,7 +570,9 @@ For that we have to change the `Year-wise` to `day-wise` as show below
 
 ![img](./output/img51.png)
 
-![img]()
+this way we did this chart :
+
+![img](./output/Number_of_Rides_Per_days.gif)
 
 Finally we got this chart 
 
