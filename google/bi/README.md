@@ -520,7 +520,7 @@ SELECT
 
 ![img](./output/img44.png)
 
-## 3. Tableau AQnalysis and Dashboard
+## 3. Tableau Analysis and Dashboard
 
 Firstly, we have multiple files in our `Cyclistic Bike Share` Dataset, there are 12 files (for various months in a year 2022) now, to treat each different file we have to merge them in single file so we have to UNION them.
 
@@ -536,7 +536,7 @@ Now, we have merged data of all the 12 .csv files so we can perform certaing ope
 
 Let's create a "Measure" or measurable feature using the two given columns or dimensions 
 
-**Step 1: Creating a field 'TripDuration' using 'ended_at' and 'started_at' columns**
+**Creating a field 'TripDuration' using 'ended_at' and 'started_at' columns**
 
 formula Used:` [ended_at] - [started_at]`
 
@@ -551,3 +551,17 @@ then after clicking to `create calculated field` a pop up box wilol come where y
 Here we did the same shown below
 
 ![img](./output/Create_TripDuration_Calculated_field.gif)
+
+#### **Number of Rides Per Day**
+
+Firstly we drag the `started_at` field to the column bar and drop it same as we did below:
+
+![img](./output/img48.png)
+
+then we drag the `t01 csv+ (Count)` field to the Rows bar as shown 
+
+![img](./output/img49.png)
+
+Now we got this result below
+
+![img]()
