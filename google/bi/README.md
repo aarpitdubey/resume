@@ -1,4 +1,4 @@
-# GOOGLE BUSSINESS INTELLIGENCE PROJECT : Cyclistic Bike Share
+# GOOGLE BUSSINESS INTELLIGENCE And GOOGLE DATA ANALYTICS PROJECT : Cyclistic Bike Share and Diamond
 
 ## System Requirements
 
@@ -7,7 +7,13 @@
 * **Excel :** Familarity with Excel. USE Pivot Table and Power Query before.
 * **Tableau :** Familarity with Tableau UI.
 
-Google Business Intelligence License (69f62442ac83acf9883d) and Certification:
+**Google Data Analytics Professional License (EET2T8PEFL4C) and Certification:**
+
+[Click Here](https://coursera.org/share/2a7660b0c5befe96fbac9ce1a79f170b "/")
+
+![img](./output/googleDAcertification.png)
+
+**Google Business Intelligence Professional License (6BR2UNAKERKS) and Certification:**
 
 [Click Here](https://coursera.org/share/69f62442ac83acf9883df43f8725e200 "/")
 
