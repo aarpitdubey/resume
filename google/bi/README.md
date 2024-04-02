@@ -547,3 +547,7 @@ Select the drop down and from that select `Create Calculated field`
 then after clicking to `create calculated field` a pop up box wilol come where you can fill the field name and your formula to decide the nature of that field below shown.
 
 ![img](./output/img46.png)
+
+Here we did the same shown below
+
+![img](./output/Create_TripDuration_Calculated_field.gif)
