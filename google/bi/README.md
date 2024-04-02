@@ -552,7 +552,7 @@ Here we did the same shown below
 
 ![img](./output/Create_TripDuration_Calculated_field.gif)
 
-#### **Number of Rides Per Day**
+#### **1. Number of Rides Per Day**
 
 Firstly we drag the `started_at` field to the column bar and drop it same as we did below:
 
@@ -564,4 +564,12 @@ then we drag the `t01 csv+ (Count)` field to the Rows bar as shown
 
 Now we got this result below
 
-![img]()
+![img](./output/img50.png)
+
+For that we have to change the `Year-wise` to `day-wise` as show below
+
+![img](./output/img51.png)
+
+Finally we got this chart 
+
+![img](./output/Number_of_Rides_Per_Days.png)
