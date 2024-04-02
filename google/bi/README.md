@@ -519,3 +519,15 @@ SELECT
 ```
 
 ![img](./output/img44.png)
+
+## 3. Tableau AQnalysis and Dashboard
+
+Firstly, we have multiple files in our `Cyclistic Bike Share` Dataset, there are 12 files (for various months in a year 2022) now, to treat each different file we have to merge them in single file so we have to UNION them.
+
+These are the files we have :
+
+![img](./output/img45.png)
+
+Now, In Tableau we have to merge these all files so we have to UNION them just like the below steps shown:
+
+![img](./output/tableau_union_of_multiple_csv_files.gif)
