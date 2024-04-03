@@ -336,6 +336,26 @@ FROM read_csv_auto("*.csv")
 
 Here we can see the total rows are 6190654 and there are 13 columns.
 
+Let's Merge and combine all the 12 csv files into one single table
+
+```pgsql
+CREATE TABLE cyclistic_bike_share 
+AS 
+SELECT * 
+FROM read_csv_auto("*.csv");
+```
+
+Now, we can simply type this below query to show all the 12 csv files data
+
+```pgsql
+SELECT *
+FROM cyclistic_bike_share;
+```
+
+![img](./output/sql2.png)
+
+![img](./output/Merging_all_csvfiles_in_a_table.gif)
+
 first of all we have multiple files or data files from May 2021 to March 2022
 
 We have to merge them all into a single data file for analysis
