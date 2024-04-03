@@ -1,13 +1,12 @@
 # GOOGLE BUSSINESS INTELLIGENCE And GOOGLE DATA ANALYTICS PROJECT : Cyclistic Bike Share
 
-## System Requirements
-
-**Tools Used :**
+## **Tools and Technologies Used :**
 
 * **Excel :** Familarity with Excel. USE Pivot Table and Power Query before.
 * **SQL:** Data Cleaning, Data Preparation and Data Analysis through SQL Queries
 * **Statistical Analysis using R:** Using R programming language
-* **Tableau :** Familarity with Tableau UI.
+* **Tableau :** Familarity with Tableau Desktop UI.
+
 
 **Google Data Analytics Professional License (EET2T8PEFL4C) and Certification:**
 
@@ -25,7 +24,82 @@ Dataset used:
 
 As this dataset is more than 1GB so I'm going to upload it to : [Cyclistic Bike Share Dataset](https://drive.google.com/drive/folders/16MQJ6CQW-_tiZsoHRnMredfOzvulW_eA?usp=sharing)
 
-## 1. Excel And Power Query Editor.
+
+# ⚙ Approach/Steps
+
+
+## Ask Phase
+
+**🔗 Business Task -** design marketing strategies to **convert casual riders to members** by understanding how annual and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics.
+
+> Questions for guiding future marketing program:
+>
+> 1. How do annual members and casual riders use Cyclistic bikes differently?
+> 2. Why would casual riders buy Cyclistic annual memberships?
+> 3. How can Cyclistic use digital media to influence casual riders to become members?
+
+## Prepare Phase
+
+#### 🔗 Quick Links
+
+**Data Source:** [Cyclistic Bike Share Dataset](https://drive.google.com/drive/folders/16MQJ6CQW-_tiZsoHRnMredfOzvulW_eA?usp=sharing)
+[Note that the data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement).]
+
+**Tools:**
+
+* Data cleaning & processing - Excel, Power Query  and SQL
+* Data visualization - [Tableau](https://public.tableau.com/app/profile/hui.min.ho/viz/CyclisticBikeShareCaseStudy_16931448059910/Sheet1#2)
+
+## Process Phase
+
+The basis for this analysis is **2022** data and the steps for processing the data are as follow:
+
+1. [Data Combining](https://github.com/minbean/Google-Data-Analytics-Capstone-Project-Cyclistic-Case-Study/blob/main/01_Data_Combining.sql)
+2. [Data Exploration](https://github.com/minbean/Google-Data-Analytics-Capstone-Project-Cyclistic-Case-Study/blob/main/02_Data_Exploration.sql)
+3. [Data Cleaning](https://github.com/minbean/Google-Data-Analytics-Capstone-Project-Cyclistic-Case-Study/blob/main/03_Data_Cleaning.sql)
+4. [Data Analysis](https://github.com/minbean/Google-Data-Analytics-Capstone-Project-Cyclistic-Case-Study/blob/main/04_Data_Analysis)
+
+#### Data Combining
+
+The 12 tables from **May 2021 to March 2022** were stacked and combined into a single table. The table consists of  rows.
+
+#### Data Exploration
+
+I ran the queries for each column from left to right in order to determine the **data type** and to uncover any **missing values, outliers, inconsistencies, and errors** within the dataset.
+
+The data set consists of  **13 variables** , as shown in the following:
+
+| **No.** | **Variable** | **Description**                                   |
+| ------------- | ------------------ | ------------------------------------------------------- |
+| 1             | ride_id            | Unique ID assigned to each ride                         |
+| 2             | rideable_type      | classic, docked, or electric                            |
+| 3             | started_at         | Date and time at the start of trip                      |
+| 4             | ended_at           | Date and time at the end of trip                        |
+| 5             | start_station_name | Name of the station where the ride journey started from |
+| 6             | start_station_id   | ID of the station where the ride journey started from   |
+| 7             | end_station_name   | Name of the station where the ride trip ended at        |
+| 8             | end_station_id     | ID of the station where the ride trip ended at          |
+| 9             | start_lat          | Latitude of starting station                            |
+| 10            | start_lng          | Longitude of starting station                           |
+| 11            | end_lat            | Latitude of ending station                              |
+| 12            | end_lng            | Longitude of ending station                             |
+| 13            | member_casual      | Type of membership of each rider                        |
+
+and the **data type** of each variable is depicted below:
+
+![1712150953489](./output/dtype.png)
+
+Before analyzing the data, the dataset was cleaned by:
+
+* Removing the trips with  **null values** .
+* Adding 3 columns: ' **ride_length_in_mins** ', ' **day_of_week** ' and ' **month** '.
+* Exclusing the **rides with duration less than a minute** or  **longer than a day** .
+
+In total, 6,190,654 rows were returned.
+
+## Analyse Phase
+
+### 1. Excel And Power Query Editor.
 
 1. Open your Ms Excel with new file or new sheet.
 2. Then, click on `Data` tab shown in the image below
@@ -37,7 +111,7 @@ As this dataset is more than 1GB so I'm going to upload it to : [Cyclistic Bike 
 5. After clicking the ok button, our power query editor will open with the files that folder containing
    ![img](./output/img5.png)
 
-### Power Query Editor in Excel
+#### Power Query Editor in Excel
 
 1. For more and better understandings, I changed the `Query 1` file name to `bike_data` you can do it using the Query Settings option
    ![img](./output/img6.png)
@@ -146,7 +220,7 @@ f(x) = Table.TransformColumns(#"Added Custom",{{"trip_duration_minutes", Duratio
 
 ![img](./output/img21.png "transformed added column")
 
-#### Q. Find out the number of counts of missing start station names in this cyclistic bike data?
+##### Q. Find out the number of counts of missing start station names in this cyclistic bike data?
 
 Firstly, we have to find the feature named as `start_station_name` or similar then we have to filter the column using the down arrow button at the column name.
 
@@ -158,7 +232,7 @@ Now, after clicking the `Transform` tab and `count rows` we have **807778** rows
 
 Similarly we can check other columns for enhancing analysis perspective. Done!
 
-#### Q. Find out the rows which are having negative values in `trip_duration_minutes` column?
+##### Q. Find out the rows which are having negative values in `trip_duration_minutes` column?
 
 let's us see is there are any values which are 0 or less than in `trip_duration_minutes` column
 
@@ -178,7 +252,7 @@ These are the rows which are containing negative values in `trip_durations_minut
 
 We have filter out the blank values and remove those values let's create a Pivot Table and draw out some Visualization and analyse that chart to make some conclusions.
 
-#### **Q. Create a Visualisation :** We have to find out the time in a day where  the maximum rides are going to happened.
+##### **Q. Create a Visualisation :** We have to find out the time in a day where  the maximum rides are going to happened.
 
 let's load our transformed data into excel sheet and then create a pivot table.
 
@@ -228,7 +302,7 @@ Here, in below chart I filtered `member_casual` to member and `rideable_type` to
 
 ![img](./output/img36.png)
 
-#### Observations:
+##### Observations:
 
 1. Around 4'O clock to 5'O clock the rides are maximum
 2. Maximum rides are going to happened in 5 pm in evening time.
@@ -241,15 +315,15 @@ Here, in below chart I filtered `member_casual` to member and `rideable_type` to
 9. Docked bikes aren't preference by the annual members or subscribers
 10. Summer casual member dominance and Winter revenue are from annual members.
 
-#### Conclusion:
+##### Conclusion:
 
 Summer times casual members preferably use electric bikes than members and In winter times most revenue generates from annual members. Peak usages of bikes are after 8 Am to 4 pm work timings or from 5 pm to 7pm. Electric bikes preference by casual members and Classic bikes preference by annual members.  Docked bikes are not prefer by the annual members.
 
 ---
 
-## 2. SQL Analysis
+### 2. SQL Analysis
 
-first of all we have multiple files or data files from January to December 2022
+first of all we have multiple files or data files from May 2021 to March 2022
 
 We have to merge them all into a single data file for analysis
 
@@ -522,10 +596,10 @@ SELECT
 
 ![img](./output/img44.png)
 
-## 3. Statistical Analysis with R language
+### 3. Statistical Analysis with R language
 
 
-## 4. Tableau Analysis and Dashboard
+### 4. Tableau Analysis and Dashboard
 
 Firstly, we have multiple files in our `Cyclistic Bike Share` Dataset, there are 12 files (for various months in a year 2022) now, to treat each different file we have to merge them in single file so we have to UNION them.
 
@@ -570,7 +644,7 @@ Here I perform the same steps below:
 ![img](./output/Null_values_in_starting_stations.gif)
 
 
-#### **1. Number of Rides Per Day**
+#### **Number of Rides Per Day**
 
 Firstly we drag the `started_at` field to the column bar and drop it same as we did below:
 
