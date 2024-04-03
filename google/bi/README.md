@@ -1,10 +1,12 @@
-# GOOGLE BUSSINESS INTELLIGENCE And GOOGLE DATA ANALYTICS PROJECT : Cyclistic Bike Share and Diamond
+# GOOGLE BUSSINESS INTELLIGENCE And GOOGLE DATA ANALYTICS PROJECT : Cyclistic Bike Share
 
 ## System Requirements
 
 **Tools Used :**
 
 * **Excel :** Familarity with Excel. USE Pivot Table and Power Query before.
+* **SQL:** Data Cleaning, Data Preparation and Data Analysis through SQL Queries
+* **Statistical Analysis using R:** Using R programming language
 * **Tableau :** Familarity with Tableau UI.
 
 **Google Data Analytics Professional License (EET2T8PEFL4C) and Certification:**
@@ -520,7 +522,10 @@ SELECT
 
 ![img](./output/img44.png)
 
-## 3. Tableau Analysis and Dashboard
+## 3. Statistical Analysis with R language
+
+
+## 4. Tableau Analysis and Dashboard
 
 Firstly, we have multiple files in our `Cyclistic Bike Share` Dataset, there are 12 files (for various months in a year 2022) now, to treat each different file we have to merge them in single file so we have to UNION them.
 
@@ -534,7 +539,7 @@ Now, In Tableau we have to merge these all files so we have to UNION them just l
 
 Now, we have merged data of all the 12 .csv files so we can perform certaing operations, Analysis and Visualizations
 
-Let's create a "Measure" or measurable feature using the two given columns or dimensions 
+Let's create a "Measure" or measurable feature using the two given columns or dimensions
 
 **Creating a field 'TripDuration' using 'ended_at' and 'started_at' columns**
 
@@ -552,13 +557,26 @@ Here we did the same shown below
 
 ![img](./output/Create_TripDuration_Calculated_field.gif)
 
+**Q. Count the number of null or missing values in `start_station_name` column**
+
+To count the number of null values, in `start_station_name` column we have to use the filter option as we can see in the below image it is in the extreme top-right corner
+
+Then we have to click on the Add button and then follow the same steps shown in the image below
+
+![img](./output/img52.png)
+
+Here I perform the same steps below:
+
+![img](./output/Null_values_in_starting_stations.gif)
+
+
 #### **1. Number of Rides Per Day**
 
 Firstly we drag the `started_at` field to the column bar and drop it same as we did below:
 
 ![img](./output/img48.png)
 
-then we drag the `t01 csv+ (Count)` field to the Rows bar as shown 
+then we drag the `t01 csv+ (Count)` field to the Rows bar as shown
 
 ![img](./output/img49.png)
 
@@ -574,6 +592,6 @@ this way we did this chart :
 
 ![img](./output/Number_of_Rides_Per_days.gif)
 
-Finally we got this chart 
+Finally we got this chart
 
 ![img](./output/Number_of_Rides_Per_Days.png)

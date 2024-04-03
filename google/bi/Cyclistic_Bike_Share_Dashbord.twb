@@ -1,0 +1,1555 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0308.0326                               -->
+<workbook original-version='18.1' source-build='2024.1.1 (20241.24.0308.0326)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='t01' inline='true' name='federated.107e5jf0kzrcgq1f5n9zx0jo2cp0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='t01' name='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m'>
+            <connection class='textscan' directory='E:/AnacondaWorkspace/dataset/cyclistic_bike_share' filename='t01.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='t01.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='ride_id' />
+            <column datatype='string' name='rideable_type' />
+            <column datatype='datetime' name='started_at' />
+            <column datatype='datetime' name='ended_at' />
+            <column datatype='string' name='start_station_name' />
+            <column datatype='string' name='start_station_id' />
+            <column datatype='string' name='end_station_name' />
+            <column datatype='string' name='end_station_id' />
+            <column datatype='real' name='start_lat' />
+            <column datatype='real' name='start_lng' />
+            <column datatype='real' name='end_lat' />
+            <column datatype='real' name='end_lng' />
+            <column datatype='string' name='member_casual' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t01.csv' table='[t01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='integer' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t02.csv' table='[t02#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='integer' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='integer' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t03.csv' table='[t03#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t04.csv' table='[t04#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t05.csv' table='[t05#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='integer' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t06.csv' table='[t06#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t07.csv' table='[t07#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='integer' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t08.csv' table='[t08#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t09.csv' table='[t09#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t10.csv' table='[t10#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t11.csv' table='[t11#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t12.csv' table='[t12#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='t01.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='ride_id' />
+            <column datatype='string' name='rideable_type' />
+            <column datatype='datetime' name='started_at' />
+            <column datatype='datetime' name='ended_at' />
+            <column datatype='string' name='start_station_name' />
+            <column datatype='string' name='start_station_id' />
+            <column datatype='string' name='end_station_name' />
+            <column datatype='string' name='end_station_id' />
+            <column datatype='real' name='start_lat' />
+            <column datatype='real' name='start_lng' />
+            <column datatype='real' name='end_lat' />
+            <column datatype='real' name='end_lng' />
+            <column datatype='string' name='member_casual' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t01.csv' table='[t01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='integer' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t02.csv' table='[t02#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='integer' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='integer' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t03.csv' table='[t03#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t04.csv' table='[t04#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t05.csv' table='[t05#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='integer' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t06.csv' table='[t06#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t07.csv' table='[t07#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='integer' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t08.csv' table='[t08#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t09.csv' table='[t09#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t10.csv' table='[t10#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t11.csv' table='[t11#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t12.csv' table='[t12#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Table Name (t01.csv+)]' value='[t01.csv+].[Table Name]' />
+          <map key='[end_lat]' value='[t01.csv+].[end_lat]' />
+          <map key='[end_lng]' value='[t01.csv+].[end_lng]' />
+          <map key='[end_station_id]' value='[t01.csv+].[end_station_id]' />
+          <map key='[end_station_name]' value='[t01.csv+].[end_station_name]' />
+          <map key='[ended_at]' value='[t01.csv+].[ended_at]' />
+          <map key='[member_casual]' value='[t01.csv+].[member_casual]' />
+          <map key='[ride_id]' value='[t01.csv+].[ride_id]' />
+          <map key='[rideable_type]' value='[t01.csv+].[rideable_type]' />
+          <map key='[start_lat]' value='[t01.csv+].[start_lat]' />
+          <map key='[start_lng]' value='[t01.csv+].[start_lng]' />
+          <map key='[start_station_id]' value='[t01.csv+].[start_station_id]' />
+          <map key='[start_station_name]' value='[t01.csv+].[start_station_name]' />
+          <map key='[started_at]' value='[t01.csv+].[started_at]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ride_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ride_id]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>ride_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rideable_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rideable_type]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>rideable_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>started_at</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[started_at]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>started_at</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ended_at</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[ended_at]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>ended_at</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[start_station_name]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>start_station_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[start_station_id]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>start_station_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[end_station_name]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>end_station_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[end_station_id]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>end_station_id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lat]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>start_lat</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lng]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>start_lng</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lat]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>end_lat</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lng]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>end_lng</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>member_casual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[member_casual]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>member_casual</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name (t01.csv+)]</local-name>
+            <parent-name>[t01.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_CC00D834564444D4923F035712E53071]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='TripDuration' datatype='real' name='[Calculation_585186479814270979]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[ended_at] - [started_at]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='t01.csv+' datatype='table' name='[__tableau_internal_object_id__].[_CC00D834564444D4923F035712E53071]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[end_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[start_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='t01.csv+' id='_CC00D834564444D4923F035712E53071'>
+            <properties context=''>
+              <relation all='true' name='t01.csv+' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='ride_id' />
+                  <column datatype='string' name='rideable_type' />
+                  <column datatype='datetime' name='started_at' />
+                  <column datatype='datetime' name='ended_at' />
+                  <column datatype='string' name='start_station_name' />
+                  <column datatype='string' name='start_station_id' />
+                  <column datatype='string' name='end_station_name' />
+                  <column datatype='string' name='end_station_id' />
+                  <column datatype='real' name='start_lat' />
+                  <column datatype='real' name='start_lng' />
+                  <column datatype='real' name='end_lat' />
+                  <column datatype='real' name='end_lng' />
+                  <column datatype='string' name='member_casual' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t01.csv' table='[t01#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='integer' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t02.csv' table='[t02#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='integer' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='integer' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t03.csv' table='[t03#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t04.csv' table='[t04#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t05.csv' table='[t05#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='integer' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t06.csv' table='[t06#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t07.csv' table='[t07#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='integer' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t08.csv' table='[t08#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t09.csv' table='[t09#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t10.csv' table='[t10#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t11.csv' table='[t11#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1cfj7ms0ylfw1414c7o3t1j0zx1m' name='t12.csv' table='[t12#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Roboto' fontsize='28'>Number of Rides Per Days</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='t01' name='federated.107e5jf0kzrcgq1f5n9zx0jo2cp0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.107e5jf0kzrcgq1f5n9zx0jo2cp0'>
+            <_.fcp.ObjectModelTableType.true...column caption='t01.csv+' datatype='table' name='[__tableau_internal_object_id__].[_CC00D834564444D4923F035712E53071]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[_CC00D834564444D4923F035712E53071]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:_CC00D834564444D4923F035712E53071:qk]' pivot='key' type='quantitative' />
+            <column datatype='datetime' name='[started_at]' role='dimension' type='ordinal' />
+            <column-instance column='[started_at]' derivation='Day-Trunc' name='[tdy:started_at:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='t01.csv+' datatype='integer' name='[__tableau_internal_object_id__].[_CC00D834564444D4923F035712E53071]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.107e5jf0kzrcgq1f5n9zx0jo2cp0].[__tableau_internal_object_id__].[cnt:_CC00D834564444D4923F035712E53071:qk]' scope='rows' value='Count of Rides' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.107e5jf0kzrcgq1f5n9zx0jo2cp0].[__tableau_internal_object_id__].[cnt:_CC00D834564444D4923F035712E53071:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.107e5jf0kzrcgq1f5n9zx0jo2cp0].[__tableau_internal_object_id__].[cnt:_CC00D834564444D4923F035712E53071:qk]</rows>
+        <cols>[federated.107e5jf0kzrcgq1f5n9zx0jo2cp0].[tdy:started_at:qk]</cols>
+      </table>
+      <simple-id uuid='{74654CE8-F477-452F-AA84-2E1BC299B0F6}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Sheet 1' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='5' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sheet 1' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F15B2C02-59AA-4AA8-B1D8-A894A404E62D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='35'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.107e5jf0kzrcgq1f5n9zx0jo2cp0].[dy:started_at:ok]</field>
+            <field>[federated.107e5jf0kzrcgq1f5n9zx0jo2cp0].[none:member_casual:nk]</field>
+            <field>[federated.107e5jf0kzrcgq1f5n9zx0jo2cp0].[none:ride_id:nk]</field>
+            <field>[federated.107e5jf0kzrcgq1f5n9zx0jo2cp0].[none:rideable_type:nk]</field>
+            <field>[federated.107e5jf0kzrcgq1f5n9zx0jo2cp0].[yr:started_at:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D8B0B038-140B-49CD-A5C6-1F5B26CB4CC9}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{809F6EF3-2548-4BE3-9F34-8364F80CF9B0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
