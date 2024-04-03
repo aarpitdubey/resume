@@ -323,6 +323,19 @@ Summer times casual members preferably use electric bikes than members and In wi
 
 ### 2. SQL Analysis
 
+To read all the csv file at once we can use this query :
+
+```pgsql
+SELECT * 
+FROM read_csv_auto("*.csv")
+```
+
+![img](./output/sql1.png)
+
+![img]()
+
+Here we can see the total rows are 6190654 and there are 13 columns.
+
 first of all we have multiple files or data files from May 2021 to March 2022
 
 We have to merge them all into a single data file for analysis
