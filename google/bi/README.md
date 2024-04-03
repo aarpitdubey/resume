@@ -332,7 +332,7 @@ FROM read_csv_auto("*.csv")
 
 ![img](./output/sql1.png)
 
-![img]()
+![img](./output/sql_import_load_data.gif)
 
 Here we can see the total rows are 6190654 and there are 13 columns.
 
