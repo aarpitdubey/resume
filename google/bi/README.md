@@ -7,7 +7,6 @@
 * **Statistical Analysis using R:** Using R programming language
 * **Tableau :** Familarity with Tableau Desktop UI.
 
-
 **Google Data Analytics Professional License (EET2T8PEFL4C) and Certification:**
 
 [Click Here](https://coursera.org/share/2a7660b0c5befe96fbac9ce1a79f170b "/")
@@ -24,13 +23,13 @@ Dataset used:
 
 As this dataset is more than 1GB so I'm going to upload it to : [Cyclistic Bike Share Dataset](https://drive.google.com/drive/folders/16MQJ6CQW-_tiZsoHRnMredfOzvulW_eA?usp=sharing)
 
-
 # ⚙ Approach/Steps
-
 
 ## Ask Phase
 
-**🔗 Business Task -** design marketing strategies to **convert casual riders to members** by understanding how annual and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics.
+#### **🔗 Business Task** 
+
+Design marketing strategies to **convert casual riders to members** by understanding how annual and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics.
 
 > Questions for guiding future marketing program:
 >
@@ -471,13 +470,8 @@ GROUP BY member_casual;
 **Q2. Proportion of Rides by Bike Type?**
 
 ```sql
-SELECT 
-rideable_type AS bike_type,
-member_casual AS membership_type,  
-COUNT (rideable_type) AS individual_membership_count, 
-SUM (COUNT (rideable_type)) OVER (Partition by rideable_type) AS total_membership,
-CONCAT (CAST (COUNT (rideable_type) * 100.0/ SUM (COUNT (rideable_type)) OVER (Partition by rideable_type) AS Decimal (10,2)), '%') AS membership_percentage
-FROM annual_trip_data
+SELECT rideable_type AS bike_type, member_casual AS membership_type, COUNT (rideable_type) AS individual_membership_count, SUM (COUNT (rideable_type)) OVER (Partition by rideable_type) AS total_membership, CONCAT (CAST (COUNT (rideable_type) * 100.0/ SUM (COUNT (rideable_type)) OVER (Partition by rideable_type) AS Decimal (10,2)), '%') AS membership_percentage
+FROM cyclistic_bike_share
 WHERE member_casual IS NOT NULL
 GROUP BY rideable_type, member_casual
 ORDER BY rideable_type;
@@ -488,11 +482,8 @@ ORDER BY rideable_type;
 **Q3. Percentage of Rides per Month?**
 
 ```sql
-SELECT member_casual AS membership_type, months,
-COUNT (months) AS membership_rides,
-SUM (COUNT (months)) OVER (Partition by months) AS total_rides_per_month,
-CONCAT (CAST ((COUNT (months)) * 100.0/ SUM (COUNT (months)) OVER (Partition by months) AS DECIMAL (10,2)), '%') AS membership_percentage
-FROM analyze_annual_trip_data
+SELECT member_casual AS membership_type, months, COUNT (months) AS membership_rides, SUM (COUNT (months)) OVER (Partition by months) AS total_rides_per_month, CONCAT (CAST ((COUNT (months)) * 100.0/SUM (COUNT (months)) OVER (Partition by months) AS DECIMAL (10,2)), '%') AS membership_percentage
+FROM cyclistic_bike_share
 WHERE member_casual is not null 
 GROUP BY member_casual, months
 ORDER BY 
@@ -631,7 +622,6 @@ SELECT
 
 ### 3. Statistical Analysis with R language
 
-
 ### 4. Tableau Analysis and Dashboard
 
 Firstly, we have multiple files in our `Cyclistic Bike Share` Dataset, there are 12 files (for various months in a year 2022) now, to treat each different file we have to merge them in single file so we have to UNION them.
@@ -675,7 +665,6 @@ Then we have to click on the Add button and then follow the same steps shown in 
 Here I perform the same steps below:
 
 ![img](./output/Null_values_in_starting_stations.gif)
-
 
 #### **Number of Rides Per Day**
 
