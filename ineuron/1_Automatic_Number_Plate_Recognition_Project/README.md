@@ -49,6 +49,7 @@ Automatic Number Plate Recognition (ANPR) technology has various real-time use c
 6. **Law Enforcement and Investigations:** ANPR technology is instrumental in law enforcement and investigations by providing valuable data on vehicle movements and identifying suspects involved in criminal activities. Police agencies use ANPR to track suspect vehicles, locate missing persons, and gather evidence for investigations.
 7. **Smart City Initiatives:** ANPR plays a critical role in smart city initiatives by facilitating efficient traffic management, enhancing public safety, and improving urban planning. By leveraging ANPR technology, cities can implement data-driven solutions for transportation optimization, emergency response coordination, and sustainable urban development.
 
-![img]()
+![img](./output/usecases.png)
+
 
 These use cases demonstrate the versatility and effectiveness of ANPR technology in various applications, showcasing its value in enhancing operational efficiency, improving security measures, and enabling data-driven decision-making.
