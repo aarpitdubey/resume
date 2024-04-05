@@ -36,3 +36,19 @@ The Application flow is set on six different different stages:
 I had created this simple diagram to show the above steps.
 
 ![img](./output/app_flow.png)
+
+## Use cases of Automatic Number Plate Detection:
+
+Automatic Number Plate Recognition (ANPR) technology has various real-time use cases that provide significant benefits in different sectors. In today's world, security is becomming a major concern for most of the organisation, institutions, corporates and essentials services. In that sense the security is the primary concern or a priority for any Organisation for that possibily, in parking areas many times rules, laws were broken un-intentionally or intentionally. Here are some common use cases along with their explanations:
+
+1. **Vehicle Parking :** ANPR is commonly used in vehicle parking management systems to automate entry and exit processes. When a vehicle enters a parking lot, ANPR cameras capture the vehicle's license plate, allowing for accurate and efficient tracking of parked vehicles. This technology can also help in managing parking space availability and enabling automated payment systems.
+2. **Toll Enforcement :** ANPR is extensively used in toll enforcement systems to identify vehicles passing through toll booths without paying the required fees. By capturing license plate details, ANPR technology enables authorities to track and penalize offenders effectively.
+3. **Vehicle Surveillance :** ANPR plays a crucial role in vehicle surveillance applications by monitoring and tracking vehicles in real-time. Law enforcement agencies use ANPR to identify stolen vehicles, track wanted vehicles, and enhance overall security. By integrating ANPR with surveillance systems, authorities can quickly locate and apprehend suspicious or unauthorized vehicles.
+4. **Traffic Control :**  ANPR technology is widely used in traffic control scenarios to manage traffic flow, monitor congestion, and enforce traffic regulations. By capturing license plate data, ANPR systems can detect vehicles violating traffic laws, such as speeding or running red lights. This information enables authorities to take immediate action and improve overall traffic management.
+5. **Access Control and Security:** ANPR is used for access control and security purposes in various facilities such as airports, corporate offices, and residential complexes. By automatically identifying vehicles entering or exiting premises, ANPR systems help enhance security measures and streamline access management processes.
+6. **Law Enforcement and Investigations:** ANPR technology is instrumental in law enforcement and investigations by providing valuable data on vehicle movements and identifying suspects involved in criminal activities. Police agencies use ANPR to track suspect vehicles, locate missing persons, and gather evidence for investigations.
+7. **Smart City Initiatives:** ANPR plays a critical role in smart city initiatives by facilitating efficient traffic management, enhancing public safety, and improving urban planning. By leveraging ANPR technology, cities can implement data-driven solutions for transportation optimization, emergency response coordination, and sustainable urban development.
+
+   ![img]()
+
+These use cases demonstrate the versatility and effectiveness of ANPR technology in various applications, showcasing its value in enhancing operational efficiency, improving security measures, and enabling data-driven decision-making.
