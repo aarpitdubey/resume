@@ -4,9 +4,13 @@
 
 In the following project we will undestand to recognize the number plate automatically using Python, OpenCV and DeepLearning. Paddle OCR for character and digits extraction from car number plate.
 
+Dataset Source : [Click Here to Download](https://storage.googleapis.com/kaggle-data-sets/686454/1203932/bundle/archive.zip?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20240409%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240409T103317Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=b5dbd498bb697a74cf572611919800ab0dead9fe4044975588c916323605fbcb511711978102da2e1aab05cf071c62efe912e7a333b84e2a463b06d24bd172688270c72e1f7f2128a382891473293714952a390c7ffdd3ea4fb4ff45bba45863bf8ef9da374170bed0ad4c8acf55bf35c5d4f14779b97c9cc2bc514df3826ece014facb640c60173abe63d3cceb2d636a3f4696f88ed8d4d8e34d93251e5f235a6123946d0f4c5ed3c51c5230b476e8ca7eb2d953e0063f396e0a955830065205f66abde8a6f59d3b63b64ea3016e1c15f2456df3ba54e7a521daf7a275ac80f2ab12e5a379697a70e657c0860349bd3c37f1e9e94ea86bea4ee7ae56eb5483e "/")
+
+https://www.kaggle.com/datasets/andrewmvd/car-plate-detection
+
 ![img](./output/img2.png)
 
-## Application Flow
+### Application Flow
 
 This Application is used to detect the number plates from the image of Cars and the image is our data.
 
@@ -27,7 +31,7 @@ The Application flow is set on six different different stages:
 
 **Optical Character Recognition (OCR) :** In step four, I had applied optical character recognition (ocr) technique using paddle ocr because at this stage still we have portion of image data or relevant portion of image data but I want to extract the characters written over that image data and also the numeric character or digits from the image.
 
-**Web Application :** In fifth step, I'm going to design and deploy the application in web environment using the flask framework and using some basic html and css basic web technologies. This step indicates i had deploy the application in the development environment.
+**Web Application :** In fifth step, I'm going to design and deploy the application in web environment using the flask framework and using some basic html and css basic web technologies. This step indicates i had deploy the application in the developmnt environment.
 
 **Deployment :** In step six, at this step I had already create and deploy the object detection or deep learning application in Development environment but the actual deployment is creating a pipleline to the cloud deployment or production-ready environment this step indication the actual deployment in the Production environment. It is the work of DevOps or MLOps or AIOPs  Engineer. I select the AWS Cloud for this step and for this application.
 
@@ -37,7 +41,7 @@ I had created this simple diagram to show the above steps.
 
 ![img](./output/app_flow.png)
 
-## Use cases of Automatic Number Plate Detection:
+### Use cases of Automatic Number Plate Detection:
 
 Automatic Number Plate Recognition (ANPR) technology has various real-time use cases that provide significant benefits in different sectors. In today's world, security is becomming a major concern for most of the organisation, institutions, corporates and essentials services. In that sense the security is the primary concern or a priority for any Organisation for that possibily, in parking areas many times rules, laws were broken un-intentionally or intentionally. Here are some common use cases along with their explanations:
 
@@ -51,5 +55,30 @@ Automatic Number Plate Recognition (ANPR) technology has various real-time use c
 
 ![img](./output/usecases.png)
 
-
 These use cases demonstrate the versatility and effectiveness of ANPR technology in various applications, showcasing its value in enhancing operational efficiency, improving security measures, and enabling data-driven decision-making.
+
+## Project Implementation
+
+Create a logger folder to get all the logs of our application
+![img](./output/loggerfilecreated.gif)
+
+And then, create a `__init__.py` and initial the code.
+
+Or their is another way creating a `template.py` file to proceed the same let's try the 2nd approach first because it's a simple approach or naive approach
+
+Create a `template.py` file and type the below code to get the path 
+
+```python
+import os
+from pathlib import Path
+
+random_path = 'google.com/ArpitDubey/detail.txt'
+
+print(Path(random_path))
+```
+
+![img](./output/filePath.gif)
+
+It also converts the forward slashes ("/") to the backward slashes ("\\")
+
+![img](./output/filePath.png)
