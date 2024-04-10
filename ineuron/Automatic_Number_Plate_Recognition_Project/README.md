@@ -62,7 +62,7 @@ These use cases demonstrate the versatility and effectiveness of ANPR technology
 Create a logger folder to get all the logs of our application
 
 
-![img](./output/loggerfilecreated.gif)
+![img](./output/loggerfilecreated.gif "Author: Arpit Dubey")
 
 And then, create a `__init__.py` and in same way we can create each folder manually and then put `__init__.py` file with some code.
 
@@ -79,7 +79,7 @@ random_path = 'google.com/ArpitDubey/detail.txt'
 print(Path(random_path))
 ```
 
-![img](./output/filePath.gif)
+![img](./output/filePath.gif "Author: Arpit Dubey")
 
 It also converts the forward slashes ("/") to the backward slashes ("\\")
 
@@ -146,7 +146,7 @@ for file_path in list_of_files:
 code implementation here :
 
 
-![img](./output/code.gif "/")
+![img](./output/code.gif "Author: Arpit Dubey")
 
 but In component folder we want `data_ingestion.py`, `data_transformation.py`, `prepare_base_model.py`, `model_trainer.py` and `model_pusher.py` files too
 
@@ -193,6 +193,6 @@ for file_path in list_of_files:
 let's add then and then see the output result:
 
 
-![img](./output/code_updated.gif "/")
+![img](./output/code_updated.gif "Author: Arpit Dubey")
 
 **NOTE**: In gif i made a correction instead of `model_pusher.py` I wrote `model-pusher.py` I just corrected it manually.
