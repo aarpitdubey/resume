@@ -143,6 +143,10 @@ for file_path in list_of_files:
             pass
 ```
 
+code implementation here :
+
+![img](./output/code.gif "/")
+
 but In component folder we want `data_ingestion.py`, `data_transformation.py`, `prepare_base_model.py`, `model_trainer.py` and `model_pusher.py` files too
 
 let's add then and then see the output result:
