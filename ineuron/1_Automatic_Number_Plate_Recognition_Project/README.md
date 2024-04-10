@@ -194,3 +194,5 @@ let's add then and then see the output result:
 
 
 ![img](./output/code_updated.gif "/")
+
+**NOTE**: In gif i made a correction instead of `model_pusher.py` I wrote `model-pusher.py` I just corrected it manually.
