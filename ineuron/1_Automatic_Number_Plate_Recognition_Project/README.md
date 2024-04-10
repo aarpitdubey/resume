@@ -62,11 +62,11 @@ These use cases demonstrate the versatility and effectiveness of ANPR technology
 Create a logger folder to get all the logs of our application
 ![img](./output/loggerfilecreated.gif)
 
-And then, create a `__init__.py` and initial the code.
+And then, create a `__init__.py` and in same way we can create each folder manually and then put `__init__.py` file with some code.
 
-Or their is another way creating a `template.py` file to proceed the same let's try the 2nd approach first because it's a simple approach or naive approach
+Or their is another way creating a `template.py` file to proceed the same but in little automated way let's try the 2nd approach first because it is a simple approach and our work and client's work become easier.
 
-Create a `template.py` file and type the below code to get the path 
+Create a `template.py` file and type the below code to get the path
 
 ```python
 import os
@@ -82,3 +82,21 @@ print(Path(random_path))
 It also converts the forward slashes ("/") to the backward slashes ("\\")
 
 ![img](./output/filePath.png)
+
+Now, you got it is a file or module which contains some python code within it.
+
+Let's try to create a package with a name `APNR` and then create required folders and `__init__.py` files like:
+
+1. src folder/`__init__.py` file
+2. component folder/`__init__.py` file
+3. config folder/`__init__.py` file
+4. constants folder/`__init__.py` file
+5. entity folder/`__init__.py` file
+6. exception folder/`__init__.py` file
+7. logger folder/`__init__.py` file
+8. utils folder/`__init__.py` file
+9. pipeline folder/`__init__.py` file
+10. notebook folder/`data_collection.ipynb` and one more `ocr.ipynb`
+11. `requirements.txt` file
+12. app.py file
+    ### Folder Structure Architecture
