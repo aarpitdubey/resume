@@ -7,6 +7,11 @@ package_name = 'com.aarpitdubey'
 list_of_files = [
     f"src/{package_name}/__init__.py",
     f"src/{package_name}/component/__init__.py",
+    f"src/{package_name}/component/data_ingestion.py",
+    f"src/{package_name}/component/data_transformation.py",
+    f"src/{package_name}/component/prepare_base_model.py",
+    f"src/{package_name}/component/model_trainer.py",
+    f"src/{package_name}/component/model_pusher.py",
     f"src/{package_name}/config/__init__.py",
     f"src/{package_name}/constants/__init__.py",
     f"src/{package_name}/entity/__init__.py",
