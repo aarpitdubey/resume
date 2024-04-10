@@ -192,4 +192,5 @@ for file_path in list_of_files:
 
 let's add then and then see the output result:
 
-![img]()
+
+![img](./output/code_updated.gif "/")
