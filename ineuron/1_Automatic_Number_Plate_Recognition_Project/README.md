@@ -98,7 +98,8 @@ Let's try to create a package with a name `APNR` and then create required folder
 9. pipeline folder/`__init__.py` file
 10. notebook folder/`data_collection.ipynb` and one more `ocr.ipynb`
 11. `requirements.txt` file
-12. app.py file### Folder Structure Architecture
+12. app.py file
 
+### Folder Structure Architecture
 
-![img]()
+![img](./output/folderstructure.png "/")
