@@ -250,3 +250,11 @@ In my case, I select the name of my vitual environment as `apnr` and python vers
 `conda create -n anpr python==3.8`
 
 ![img](./output/creating_env.gif "Author: Arpit Dubey")
+
+install all the packages mentioned in `requirements.txt`
+
+Note: activate your virtual environment first.
+
+`pip install -r requirements.txt`
+
+![img](./output/installing_packages.gif)
