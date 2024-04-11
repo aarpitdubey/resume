@@ -218,3 +218,23 @@ setuptools.setup(
 This `setup.py` file contains the information about the version, project name, author (who creates it), description (about the project or application functionalities) and packages used or where to install those packages.
 
 ![img](./output/setup.gif)
+
+Now, we have to mentioned the packages we are using to make this project that will in our `requirements.txt` file
+
+```plaintext
+pandas
+tensorflow==2.10
+scikit-learn
+opencv-python-headless
+boto3==1.26.3
+mypy-boto3-s3==1.24.76
+from_root==1.0.2
+python-dotenv
+paddleocr
+paddlepaddle
+flask
+numpy==1.23.5
+-e .
+```
+
+![img]()
