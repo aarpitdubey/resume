@@ -258,3 +258,15 @@ Note: activate your virtual environment first.
 `pip install -r requirements.txt`
 
 ![img](./output/installing_packages.gif)
+
+Now we have install all the required packages
+
+let's start working with `Jupyter Notebook` first
+
+### Working with Jupyter Notebook
+
+After Activating you environment 
+
+![img](./output/activatingenvironment.gif "Author: Arpit Dubey")
+
+let's install the Ipykernel
