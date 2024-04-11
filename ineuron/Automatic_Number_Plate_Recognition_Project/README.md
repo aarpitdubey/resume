@@ -194,7 +194,7 @@ let's add then and then see the output result:
 
 **NOTE**: In gif i made a correction instead of `model_pusher.py` I wrote `model-pusher.py` I just corrected it manually.
 
-Creating a `setup.py` file 
+Creating a `setup.py` file
 
 ```python
 import setuptools # type: ignore
@@ -237,4 +237,16 @@ numpy==1.23.5
 -e .
 ```
 
-![img]()
+
+
+![img](./output/requirements.gif "Author: Arpit Dubey")
+
+Here to install all the written packages we have to first **creating our environment** for that:
+
+`conda create -n <name_of_the_environment> python==<version>\`
+
+In my case, I select the name of my vitual environment as `apnr` and python version `3.8`
+
+`conda create -n anpr python==3.8`
+
+![img](./output/creating_env.gif "Author: Arpit Dubey")
