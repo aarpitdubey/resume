@@ -193,3 +193,28 @@ let's add then and then see the output result:
 ![img](./output/code_updated.gif "Author: Arpit Dubey")
 
 **NOTE**: In gif i made a correction instead of `model_pusher.py` I wrote `model-pusher.py` I just corrected it manually.
+
+Creating a `setup.py` file 
+
+```python
+import setuptools # type: ignore
+
+VERSION = '0.0.1'
+PROJECT_NAME = 'Automatic Number Plate Recognition'
+AUTHOR_NAME = 'Arpit Dubey'
+DESCRIPTION = 'An application (or) a project which can recognize the number plates of cars'
+
+setuptools.setup(
+    version=VERSION,
+    PROJECT_NAME=PROJECT_NAME,
+    author=AUTHOR_NAME,
+    description=DESCRIPTION,
+    package_dir= {"":"src"},
+    packages=setuptools.find_packages(where='src')
+)
+
+```
+
+This `setup.py` file contains the information about the version, project name, author (who creates it), description (about the project or application functionalities) and packages used or where to install those packages.
+
+![img](./output/setup.gif)
