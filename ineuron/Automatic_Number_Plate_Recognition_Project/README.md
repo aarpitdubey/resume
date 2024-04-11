@@ -61,7 +61,6 @@ These use cases demonstrate the versatility and effectiveness of ANPR technology
 
 Create a logger folder to get all the logs of our application
 
-
 ![img](./output/loggerfilecreated.gif "Author: Arpit Dubey")
 
 And then, create a `__init__.py` and in same way we can create each folder manually and then put `__init__.py` file with some code.
@@ -137,14 +136,13 @@ for file_path in list_of_files:
   
     if file_dir != '':
         os.makedirs(file_dir, exist_ok=True)
-      
+  
     if(not os.path.exists(file_path)) or (os.path.getsize(file_path)==0):
         with open(file_path, "w") as f:
             pass
 ```
 
 code implementation here :
-
 
 ![img](./output/code.gif "Author: Arpit Dubey")
 
@@ -191,7 +189,6 @@ for file_path in list_of_files:
 ```
 
 let's add then and then see the output result:
-
 
 ![img](./output/code_updated.gif "Author: Arpit Dubey")
 

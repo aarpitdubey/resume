@@ -1,0 +1,12 @@
+{
+    "files.autoSave": "onWindowChange",
+    "editor.formatOnSave": false,
+    "files.autoGuessEncoding": false,
+    "markdown.preview.openMarkdownLinks": "inEditor",
+    "vscode-edge-devtools.headless": false,
+    "markdown.validate.enabled": true,
+    "markdown.updateLinksOnFileMove.enabled": "always",
+    "markdown.trace.extension": "verbose",
+    "markdown.server.log": "debug",
+    "markdown.preview.breaks": false
+}
