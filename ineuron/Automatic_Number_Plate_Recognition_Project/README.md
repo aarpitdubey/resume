@@ -237,8 +237,6 @@ numpy==1.23.5
 -e .
 ```
 
-
-
 ![img](./output/requirements.gif "Author: Arpit Dubey")
 
 Here to install all the written packages we have to first **creating our environment** for that:
@@ -265,8 +263,18 @@ let's start working with `Jupyter Notebook` first
 
 ### Working with Jupyter Notebook
 
-After Activating you environment 
+After Activating your environment
 
 ![img](./output/activatingenvironment.gif "Author: Arpit Dubey")
 
-let's install the Ipykernel
+let's install the Ipykernel and jupyternote book
+
+`> pip install ipykernel jupyter notebook`
+
+then after it installed type this command 
+
+ `> activate <env_name>`
+
+`> jupyter notebook`
+
+![img](./output/jupyter_notebook.gif "Author: Arpit Dubey")
