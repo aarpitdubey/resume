@@ -278,3 +278,39 @@ then after it installed type this command
 `> jupyter notebook`
 
 ![img](./output/jupyter_notebook.gif "Author: Arpit Dubey")
+
+I used VSCode editor with jupyter notebook extention it makes me feel easy to do my work!
+
+Let's import some useful libraries in jupyter notebook
+
+```python
+# Import Libraries
+
+import pandas as pd
+import numpy as np
+import os
+import cv2
+import tensorflow as tf
+from sklearn.model_selection import train_test_split
+```
+
+NOTE: We add `os` library to understand the path of current working directory.
+
+But, check you current directory first:
+
+`os.getcwd()`
+
+and if you want to change it use this code:
+
+`os.chdir('<your dataset path>')`
+
+in my case I change it because my current directory for dataset is different 
+
+`os.chdir('E:\\AnacondaWorkspace\\resume\\ineuron\\Automatic_Number_Plate_Recognition_Project\\Dataset')`
+
+To extract data from the annotation file or extract data xml file we have to import some more useful libraries
+
+```python
+import xml.etree.ElementTree as xet
+from glob import glob
+```
