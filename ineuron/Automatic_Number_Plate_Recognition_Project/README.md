@@ -271,7 +271,7 @@ let's install the Ipykernel and jupyternote book
 
 `> pip install ipykernel jupyter notebook`
 
-then after it installed type this command 
+then after it installed type this command
 
  `> activate <env_name>`
 
@@ -304,7 +304,7 @@ and if you want to change it use this code:
 
 `os.chdir('<your dataset path>')`
 
-in my case I change it because my current directory for dataset is different 
+**Note**: In my case I change it because my current directory for dataset is different
 
 `os.chdir('E:\\AnacondaWorkspace\\resume\\ineuron\\Automatic_Number_Plate_Recognition_Project\\Dataset')`
 
@@ -314,3 +314,13 @@ To extract data from the annotation file or extract data xml file we have to imp
 import xml.etree.ElementTree as xet
 from glob import glob
 ```
+
+![img](./output/working_xml_path.gif)
+
+**Challenge 1: Current directory understanding problem**
+
+**Challenge 2: Resolving with correct directory path**
+
+**Challenge 3: Want both the image and xml annotations together.**
+
+![img]()
