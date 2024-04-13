@@ -315,7 +315,7 @@ import xml.etree.ElementTree as xet
 from glob import glob
 ```
 
-![img](./output/working_xml_path.gif)
+![img](./output/working_xml_path.gif "Author: Arpit Dubey")
 
 **Challenge 1: Current directory understanding problem**
 
@@ -323,4 +323,5 @@ from glob import glob
 
 **Challenge 3: Want both the image and xml annotations together.**
 
-![img]()
+
+![img](./output/corrected_xml_path.gif "Author: Arpit Dubey")
