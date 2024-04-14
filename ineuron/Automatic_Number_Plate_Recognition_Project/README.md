@@ -323,5 +323,79 @@ from glob import glob
 
 **Challenge 3: Want both the image and xml annotations together.**
 
-
 ![img](./output/corrected_xml_path.gif "Author: Arpit Dubey")
+
+Now, let's seperate the filepaths, xmin, xmax, ymin and ymax create a dictionary
+
+![img](./output/working_xml_files.png "Author: Arpit Dubey")
+
+**Step 1** : we have to parse the file
+
+**Step 2** : find the root node for this xml tree
+
+**Step 3**: find the first targeted tag then, we have to find the 2nd targeted tag
+
+**Step 4:** Now, after finding the ` filenames, xmax, amin, ymax and ymin` we have to save them in a dictionary because then we convert it into a dataframe or csv file.
+
+**Step 5:** As of now, we find the `xmax, xmin, ymax and ymin` but we don't have the image filename, find it and insert.
+
+Now, before parsing we have to create a dictonary of lists so, we want to parse the annotations or xml files
+
+for that we required five important things : filepath, xmin, xmax, ymin, ymax and these are in multiple values for different different images one xml file have xmin, xmax, ymin and ymax and there are multiples xml files and paths
+
+```python
+# Let's create a dictionary which have certain list as values, filepath=[], xmin[], xmax[], ymin[], ymax[]
+
+label_dict = dict(filepath=[], xmin=[], xmax=[], ymin=[], ymax=[])
+
+# There are multiple files and values so, we require a loop
+
+for file in path:
+    data = xet.parse(file) # parsing the files
+    root = data.getroot() #getting the root
+    object = root.find('object') # through root node we can find the object tag
+    bnd_boxtag = object.find('bndbox') # through object tag we can find the bndbox (bounding box values)
+  
+    x_min = int(bnd_boxtag.find('xmin').text) # these 4 xmin, xmax, ymin, ymax are bounding box conditions
+    x_max = int(bnd_boxtag.find('xmax').text)
+    y_min = int(bnd_boxtag.find('ymin').text)
+    y_max = int(bnd_boxtag.find('ymax').text)
+  
+    # Appending extracted coordinates into a dictonary
+  
+    label_dict['filepath'].append(file)
+    label_dict['xmin'].append(x_min)
+    label_dict['xmax'].append(x_max)
+    label_dict['ymin'].append(y_min)
+    label_dict['ymax'].append(y_max)
+
+```
+
+Now we have the all the 5 values of multiple files we have to create a DataFrame using pandas also generate a csv file for this information
+
+##### Converted Extracted XML data into a dataframe
+
+```python
+df = pd.DataFrame(label_dict)
+df.to_csv('labels.csv', index=False)
+df.head()
+```
+
+![img](./output/convert_extracted_xml_data_into_dataframe.png)
+
+![img](./output/find_the_img_path.png)
+
+##### Extract respective image filename of XML and inserting it into a dataframe
+
+```python
+def get_filename(filename):
+    image_filename = xet.parse(filename).getroot().find('filename').text
+    image_filepath = os.path.join(os.getcwd(), 'common', image_filename)
+    return image_filepath
+
+image_path = list(df['filepath'].apply(get_filename))
+```
+
+![img](./output/find_the_img_path2.png)
+
+Let's check with

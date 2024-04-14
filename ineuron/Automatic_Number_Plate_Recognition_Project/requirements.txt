@@ -1,4 +1,6 @@
 pandas
+plotly
+kaleido
 tensorflow==2.10
 scikit-learn
 opencv-python-headless
