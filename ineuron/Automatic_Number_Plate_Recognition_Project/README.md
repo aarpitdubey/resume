@@ -381,9 +381,9 @@ df.to_csv('labels.csv', index=False)
 df.head()
 ```
 
-![img](./output/convert_extracted_xml_data_into_dataframe.png)
+![img](./output/convert_extracted_xml_data_into_dataframe.png "Author: Arpit Dubey")
 
-![img](./output/find_the_img_path.png)
+![img](./output/find_the_img_path.png "Author: Arpit Dubey")
 
 ##### Extract respective image filename of XML and inserting it into a dataframe
 
@@ -396,6 +396,10 @@ def get_filename(filename):
 image_path = list(df['filepath'].apply(get_filename))
 ```
 
-![img](./output/find_the_img_path2.png)
+![img](./output/find_the_img_path2.png "Author: Arpit Dubey")
+
+Here the execution of code:
+
+![img](./output/data_extraction_and_xml_parsing.gif "Author: Arpit Dubey")
 
 Let's check with
