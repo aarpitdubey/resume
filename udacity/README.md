@@ -196,4 +196,6 @@ Your GAN generates realistic looking images. You have proven to understand the a
 
 ---
 
-![img]()
+
+
+![img](./output/review.png)
