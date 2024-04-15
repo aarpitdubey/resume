@@ -1,6 +1,6 @@
 # UDACITY DEEP LEARNING NANO DEGREE
 
-Udacity Deep Learning Nano Degree : [click here](confirm.udacity.com/NJDJ6YWZ) and for this project rubics reviews : [click here](https://review.udacity.com/?utm_campaign=ret_000_auto_ndxxx_submission-reviewed&utm_source=blueshift&utm_medium=email&utm_content=reviewsapp-submission-reviewed&bsft_clkid=ee02acaf-30ca-42d8-a2cf-392023bd02df&bsft_uid=23bba4a4-5998-4a02-903e-a5107625f797&bsft_mid=c7e10d91-356a-4beb-8321-4ae1e15cee25&bsft_eid=6f154690-7543-4582-9be7-e397af208dbd&bsft_txnid=33c2bdc7-92ff-4bb1-a9d9-4ef9647f00c3#!/reviews/1440538 "click here for review")
+Udacity Deep Learning Nano Degree : [click here](https://www.udacity.com/certificate/NJDJ6YWZYWZ "deep learning nano degree") and for this project rubics reviews : [click here](https://review.udacity.com/?utm_campaign=ret_000_auto_ndxxx_submission-reviewed&utm_source=blueshift&utm_medium=email&utm_content=reviewsapp-submission-reviewed&bsft_clkid=ee02acaf-30ca-42d8-a2cf-392023bd02df&bsft_uid=23bba4a4-5998-4a02-903e-a5107625f797&bsft_mid=c7e10d91-356a-4beb-8321-4ae1e15cee25&bsft_eid=6f154690-7543-4582-9be7-e397af208dbd&bsft_txnid=33c2bdc7-92ff-4bb1-a9d9-4ef9647f00c3#!/reviews/1440538 "click here for review")
 
 ![img](./output/Udacity_Deep_Learning_Nano_Degree.png)
 
