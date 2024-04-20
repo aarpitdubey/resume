@@ -431,3 +431,49 @@ image_path[100]
 **Execution of code :**
 
 ![img](./output/displaying_Original_image.gif "Author: Arpit Dubey")
+
+**Displaying the detection on number plale and it's code:**
+
+```python
+# 1. Define the file path
+
+image_path_ = image_path[100]
+detected_number_plate = image_path_
+
+# 2. Read the image using plotly
+
+detected_number_plate_img = io.imread(detected_number_plate)
+
+# 3. Define the coordinates;
+
+x_min = 285
+y_min = 241
+x_max = 423
+y_max = 286
+
+# 4. Create the plotly figure and add the rectangle shape
+
+fig = px.imshow(detected_number_plate_img)
+fig.update_layout(width=800, height=500, margin=dict(l=10, r=10, b=10, t=10), xaxis_title='Fig. 1 - Cars189.png with bounding box')
+fig.add_shape(type='rect', x0=x_min, x1=x_max, y0=y_min , y1=y_max, xref='x', yref='y', line_color='red')
+
+# 5. Save the figure to an image file
+image_filepath = os.path.join(os.getcwd(), 'Test', 'test_image.png')
+
+# 6. Use the correct method to write the image
+fig.write_image(image_filepath, engine='kaleido')
+
+# 7. Display the saved image
+img=mpimg.imread(image_filepath)
+plt.imshow(img)
+plt.axis('off')
+plt.show()
+```
+
+**Execution of this code:**
+
+![img](./output/detecting_number_plate_in_a_random_image.gif "Author: Arpit Dubey")
+
+This is the result I'm getting: `bounding box coordinated well detected the number plates`
+
+![img](./output/original_img_and_number_plate_detected_img.png)
