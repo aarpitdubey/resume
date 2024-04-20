@@ -548,4 +548,4 @@ x_train.shape, x_test.shape, y_train.shape, y_test.shape
 
 **Execution of code:**
 
-![img]()
+![img](./output/data_preprocessing.gif "Author: Arpit Dubey")
