@@ -398,8 +398,36 @@ image_path = list(df['filepath'].apply(get_filename))
 
 ![img](./output/find_the_img_path2.png "Author: Arpit Dubey")
 
-Here the execution of code:
+**Here the execution of code:**
 
 ![img](./output/data_extraction_and_xml_parsing.gif "Author: Arpit Dubey")
 
-Let's check with
+Let's check out the **detection** using x_min, x_max, y_min and y_max coordinates in some random image.
+
+```python
+import plotly.express as px
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+from skimage import io
+from IPython.display import Image
+from PIL import Image, ImageDraw
+```
+
+imported useful libraries and let's see a random image
+
+```python
+ORIGINAL_IMG = mpimg.imread(image_path[100]) # random image
+plt.imshow(ORIGINAL_IMG)
+```
+
+```python
+image_path[100]
+```
+
+**Output :**
+
+    'e:\\AnacondaWorkspace\\resume\\ineuron\\Automatic_Number_Plate_Recognition_Project\\Dataset\\common\\Cars189.png'
+
+**Execution of code :**
+
+![img](./output/displaying_Original_image.gif "Author: Arpit Dubey")
