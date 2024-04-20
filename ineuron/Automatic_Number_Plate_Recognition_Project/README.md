@@ -477,3 +477,75 @@ plt.show()
 This is the result I'm getting: `bounding box coordinated well detected the number plates`
 
 ![img](./output/original_img_and_number_plate_detected_img.png)
+
+#### Data Preprocessing
+
+- Each image we will convert into an array using OpenCV
+- Each image will be resize into (224, 224) because it is the standard compatible size of pre-trained transfer learning mdel i.e., Inceprion Resnet V2
+- Normalizing the image by dividing with maximum number i.e., 255 (max. no. for 8-bit images) and the process is called normalization (Min-Max Scaler)
+- Need to normalize the labels too because for Deep Learning model output range should be 0 to 1. For normalizing the labels I use to divide  the diagonal points with width and height of image.
+
+**Coding :** 
+
+```python
+# importing library
+
+from tensorflow.keras.preprocessing.image import load_img, img_to_array
+
+# Creating some required variables and list
+
+labels = df.iloc[:, 1:].values
+output = []
+data = []
+
+# looping over each image
+
+for index in range(len(image_path)):
+  
+    # image path
+  
+    image = image_path[index]
+  
+    # 1. Image to array
+  
+    image_array = cv2.imread(image)
+    height, width, depth = image_array.shape
+
+
+    # 2. Resizing image to (224, 224)
+  
+    load_image = load_img(image, target_size = (224, 224))
+    load_image_array = img_to_array(load_image)
+
+
+    # 3. Normalize image
+  
+    normalized_load_image_array = load_image_array/255.0
+
+
+    # 4. Normalize labels
+  
+    xmin, xmax, ymin, ymax = labels[index]
+    normalized_xmin, normalized_xmax = xmin/width, xmax/width
+    normalized_ymin, normalized_ymax = ymin/height, ymax/height
+    normalized_label = (normalized_xmin, normalized_xmax, normalized_ymin, normalized_ymax)
+
+    # 5. Appending Outputs and Data
+  
+    data.append(normalized_load_image_array)
+    output.append(normalized_label)
+```
+
+Spliting data into train and test split
+
+```python
+X = np.array(data, dtype = np.float32)
+y = np.array(output, dtype = np.float32)
+
+x_train, x_test, y_train, y_test = train_test_split(X, y,  train_size=0.8, random_state=42)
+x_train.shape, x_test.shape, y_train.shape, y_test.shape
+```
+
+**Execution of code:**
+
+![img]()
