@@ -587,6 +587,23 @@ model.compile(loss='mse',optimizer=tf.keras.optimizers.Adam(learning_rate=1e-4),
 model.summary()
 ```
 
-**Execution:** 
+This code is for building a neural network model using the InceptionResNetV2 architecture for image classification. 
+
+1. **Importing Libraries:**
+   * The code starts by importing necessary libraries. These include functionalities from TensorFlow's Keras module.
+2. **Neural Network Modeling:**
+   * The InceptionResNetV2 model pre-trained on the ImageNet dataset is instantiated with its weights set to 'imagenet' and the top layers excluded.
+   * The output of the InceptionResNetV2 model is then passed through a series of Dense layers, which are fully connected layers in a neural network. These Dense layers help in learning features from the extracted image features.
+   * The last Dense layer has 4 neurons with sigmoid activation, indicating that this is a multi-label classification task.
+3. **Base Model:**
+   * The model is constructed using the input and output from the InceptionResNetV2 model.
+4. **Compiling the Model:**
+   * The model is compiled with a mean squared error (MSE) loss function, the Adam optimizer with a learning rate of 1e-4, and accuracy as the metric to monitor.
+5. **Model Summary:**
+   * Finally, the summary of the model is printed, showing the architecture of the model including the layers and parameters.
+
+This code essentially **creates a custom neural network** by combining the powerful InceptionResNetV2 architecture with additional layers for specific task requirements, and then compiles the model for training and evaluation.
+
+**Execution:**
 
 ![img](./output/base_model.gif "Author: Arpit Dubey")
