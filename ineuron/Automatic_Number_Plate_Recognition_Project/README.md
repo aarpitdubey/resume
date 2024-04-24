@@ -589,4 +589,4 @@ model.summary()
 
 **Execution:** 
 
-![img]()
+![img](./output/base_model.gif "Author: Arpit Dubey")
