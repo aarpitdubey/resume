@@ -587,7 +587,7 @@ model.compile(loss='mse',optimizer=tf.keras.optimizers.Adam(learning_rate=1e-4),
 model.summary()
 ```
 
-This code is for building a neural network model using the InceptionResNetV2 architecture for image classification. 
+This code is for building a neural network model using the InceptionResNetV2 architecture for image classification.
 
 1. **Importing Libraries:**
    * The code starts by importing necessary libraries. These include functionalities from TensorFlow's Keras module.
@@ -607,3 +607,111 @@ This code essentially **creates a custom neural network** by combining the power
 **Execution:**
 
 ![img](./output/base_model.gif "Author: Arpit Dubey")
+
+#### Model Training
+
+**Tensorboard**
+
+- TensorBoard is a tool for providing the measurements and
+  visualizations needed during the workflow.
+- It enables tracking experiment metrics like loss and
+  accuracy
+
+**Batch Size**
+
+- The batch size defines the number of samples that will be
+  propagated through the network.
+- let's say you have 1000 training samples and you want to
+  set up a batch_size equal to 100. The algorithm takes the first 100 samples
+  (from 1st to 100th) from the training dataset and trains the network.
+
+```python
+
+
+
+tensorboard = TensorBoard('object detection')
+
+
+
+ 
+
+
+
+history = model.fit(x=x_train, y= y_train,batch_size=10,
+epochs=10, validation_data (x_test,y_test),callbacks=[tensorboard])
+
+
+
+ 
+
+
+
+# Saving our trained model
+
+
+
+model.save('anpr_arpit_dubey_model.h5')
+
+
+
+```
+
+**Tensorboard**
+
+- TensorBoard is a tool for providing the measurements and
+  visualizations needed during the workflow.
+- It enables tracking experiment metrics like loss and
+  accuracy
+
+**Batch Size**
+
+- The batch size defines the number of samples that will be
+  propagated through the network.
+- let's say you have 1000 training samples and you want to
+  set up a batch_size equal to 100. The algorithm takes the first 100 samples
+  (from 1st to 100th) from the training dataset and trains the network.
+
+```python
+tensorboard = TensorBoard('object detection')
+
+history = model.fit(x=x_train, y= y_train,batch_size=10,
+epochs=10, validation_data (x_test,y_test),callbacks=[tensorboard])
+
+# Saving our trained model
+
+model.save('anpr_arpit_dubey_model.h5')
+```
+
+1. **TensorBoard Initialization:**
+
+- `tensorboard = TensorBoard('object detection')`
+  initializes TensorBoard with the provided name 'object detection'. TensorBoard
+  is a visualization tool that comes with TensorFlow, used for monitoring and
+  visualizing various aspects of the model training process.
+
+2. **Model Training:**
+
+   ```python
+   model.fit(x=x_train, y=y_train, batch_size=10, epochs=10,
+   validation_data=(x_test, y_test), callbacks=[tensorboard])
+   ```
+
+- `model.fit(x=x_train, y=y_train, batch_size=10, epochs=10, validation_data=(x_test, y_test), callbacks=[tensorboard])` trains the model using the training data `x_train` and `y_train`.
+- The `batch_size=10` specifies how many samples are used in each training iteration.
+- The `epochs=10` indicates the number of times the model will go through the entire training dataset.
+- `validation_data=(x_test, y_test)` provides validation data to evaluate the model performance during training.
+- `callbacks=[tensorboard]` includes the `tensorboard` callback to monitor the training process using TensorBoard.
+
+3. **Model Saving:**
+
+   - `model.save('anpr_arpit_dubey_model.h5')` saves the trained model to a file named 'anpr_arpit_dubey_model.h5'. This file can be later loaded to make predictions without retraining the model.
+
+   ![img](./output/model_training.png "Author: Arpit Dubey")
+
+### Functionality:
+
+- The code segment initializes TensorBoard for visualization during model training, trains the model on the provided data, incorporates TensorBoard for monitoring, and finally saves the trained model for future use.
+
+  **Execution:**
+
+![img](./output/model_training.gif "Author: Arpit Dubey")
