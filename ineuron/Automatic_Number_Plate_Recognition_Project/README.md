@@ -485,7 +485,7 @@ This is the result I'm getting: `bounding box coordinated well detected the numb
 - Normalizing the image by dividing with maximum number i.e., 255 (max. no. for 8-bit images) and the process is called normalization (Min-Max Scaler)
 - Need to normalize the labels too because for Deep Learning model output range should be 0 to 1. For normalizing the labels I use to divide  the diagonal points with width and height of image.
 
-**Coding :** 
+**Coding :**
 
 ```python
 # importing library
@@ -549,3 +549,44 @@ x_train.shape, x_test.shape, y_train.shape, y_test.shape
 **Execution of code:**
 
 ![img](./output/data_preprocessing.gif "Author: Arpit Dubey")
+
+#### Preparing the Base Model
+
+- A pre-trained model has been previously trained on a dataset and contains the weights and biases that represent the features of whichever dataset it was trained on.
+- InceptionResNetV2, is a convolutional neural network that is trained on more than a million images from the ImageNet database.
+
+**code:**
+
+```python
+# import Libraries
+
+from tensorflow.keras.models import Model
+from tensorflow.keras.callbacks import TensorBoard
+from tensorflow.keras.applications import InceptionResNetV2
+from tensorflow.keras.layers import Dense, Dropout, Flatten, Input
+
+# Neural Network Modeling
+
+inception_renet = InceptionResNetV2(weights='imagenet', include_top=False,input_tensor=Input(shape=(224,224,3)))
+output_model = inception_renet.output
+output_model = Flatten()(output_model)
+output_model = Dense(500, activation = 'relu')(output_model)
+output_model = Dense(250, activation = 'relu')(output_model)
+output_model = Dense(4, activation ='sigmoid')(output_model)
+
+# Base Model 
+
+model = Model(inputs = inception_renet.input, outputs= output_model)
+
+# Compile our Model
+
+model.compile(loss='mse',optimizer=tf.keras.optimizers.Adam(learning_rate=1e-4),metrics=['accuracy'])
+
+# Model Summary
+
+model.summary()
+```
+
+**Execution:** 
+
+![img]()
