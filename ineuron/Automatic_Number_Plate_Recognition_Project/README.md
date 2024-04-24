@@ -715,3 +715,7 @@ model.save('anpr_arpit_dubey_model.h5')
   **Execution:**
 
 ![img](./output/model_training.gif "Author: Arpit Dubey")
+
+Then I change the hyper parameter, `batch_size=10` and `epochs=10`
+
+![img](./output/hyperparameter.gif "Author: Arpit Dubey")
